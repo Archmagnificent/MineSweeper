@@ -14,7 +14,6 @@
 #include "InputValidation.h"  //For handling validation of user input.
 
 
-
 namespace GameData
 {
     //Namespace "GameData" starts here :
@@ -94,10 +93,11 @@ private:
     GameData::Coordinates flagCoordinates{};
     GameData::Coordinates uncoveredCoordinates{};
 
-    int minesCount{ 10 };
-    int flagsLeft{ 10 };
+    int minesCount{ 10 };                               //Variable holding the number of mines on the grid
+    int flagsLeft{ 10 };                                //Variable holding the amount of lfags players have left
 
-    bool firstGame{ true };
+    bool firstGame{ true };                             //Set to true if the game didn't start yet. If set to true, clicking on a spot will instead
+                                                        //Place mines on the grid, in all the spots except the clicked on slot and surroundings
 
 
     GameData::GameGrid gameGrid;                        //Build the object of class Grid2D to serve as the game's minefield
