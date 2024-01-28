@@ -538,7 +538,7 @@ public:
         while (true)
         {
             system("CLS");
-            std::cout << "Welcome to minesweeper, or rather a terrible version of it \n" << '\n' << "Type to begin :\n";
+            std::cout << "Welcome to minesweeper. \n" << '\n' << "Type to begin :\n";
             std::cout << "Change difficulty ---->    Easy Mode   | 8x8 Grid, 10 mines    - 'easy'\n";
             std::cout << "---------------------->    Medium Mode | 16x16 Grid, 40 mines  - 'mid'\n";
             std::cout << "---------------------->    Hard Mode   | 30x16 Grid, 99 mines  - 'hard'\n" << '\n';
